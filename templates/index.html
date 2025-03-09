@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحميل الفيديوهات والصوتيات</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h2 class="text-center">🎬 تحميل الفيديوهات والملفات الصوتية</h2>
+        <form method="POST" class="mt-4">
+            <div class="mb-3">
+                <label for="url" class="form-label">📌 أدخل رابط الفيديو:</label>
+                <input type="text" class="form-control" id="url" name="url" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="format" class="form-label">🎵 اختيار التنسيق:</label>
+                <select class="form-select" id="format" name="format">
+                    <option value="video">🎥 فيديو</option>
+                    <option value="audio">🎧 صوت (MP3)</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="save_path" class="form-label">📁 اختر مجلد الحفظ (اختياري):</label>
+                <input type="text" class="form-control" id="save_path" name="save_path" placeholder="المسار الافتراضي: downloads">
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">🚀 تحميل</button>
+        </form>
+    </div>
+</body>
+</html>
